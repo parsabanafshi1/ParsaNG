@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">v2rayNG</string>
+    <string name="app_name" translatable="false">ParsaNG</string>
     <string name="app_widget_name">تعویض</string>
     <string name="app_tile_name">تعویض</string>
     <string name="app_tile_first_use">برای اولین استفاده از این قابلیت، لطفاً ابتدا از داخل برنامه یک سرور اضافه کنید</string>
@@ -14,14 +14,14 @@
     <string name="pull_down_to_refresh">برای بروزرسانی، صفحه را به پایین بکشید!</string>
 
     <!-- Notifications -->
-    <string name="notification_channel_service">سرویس v2rayNG</string>
+    <string name="notification_channel_service">سرویس ParsaNG</string>
     <string name="notification_channel_subscription_updates">به‌روزرسانی اشتراک‌ها</string>
     <string name="notification_channel_connection_checks">بررسی اتصال</string>
     <string name="notification_action_stop_v2ray">توقف</string>
     <string name="toast_permission_denied">امکان دریافت مجوز وجود ندارد</string>
     <string name="toast_permission_denied_notification">امکان دریافت مجوز ارسال اعلان وجود ندارد</string>
     <string name="notification_action_more">برای اطلاعات بیشتر کلیک کنید</string>
-    <string name="toast_services_start">شروع خدمات</string>
+    <string name="toast_services_start">در حال وصل شدن...</string>
     <string name="toast_services_stop">توقف سرویس</string>
     <string name="toast_services_success">سرویس با موفقیت شروع شد</string>
     <string name="toast_services_failure">شروع سرویس با شکست مواجه شد</string>
