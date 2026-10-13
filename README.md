@@ -19,12 +19,6 @@ Download the latest release here:
 
 https://github.com/parsabanafshi1/ParsaNG/releases
 
-> [!TIP]
-> v2rayNG is the mobile version. For the desktop version, please visit the v2rayN \
-> v2rayNG 是手机版，电脑版请访问 v2rayN
->
-> https://github.com/2dust/v2rayN
-
 ---
 
 ### Geoip and Geosite
