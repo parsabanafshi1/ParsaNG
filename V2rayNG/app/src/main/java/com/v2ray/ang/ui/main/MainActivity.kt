@@ -93,14 +93,20 @@ class MainActivity : HelperBaseComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // ==== ParsaNG default config ====
+        // ==== ParsaNG Subscription ====
         val prefs = getSharedPreferences("ParsaNG", MODE_PRIVATE)
         if (!prefs.getBoolean("first_run", false)) {
-            val config = "vless://b654a87f-3bdc-4482-ac21-4ca97c3348db@parsa-production-c68f.up.railway.app:443?encryption=none&security=tls&type=ws&sni=parsa-production-c68f.up.railway.app&host=parsa-production-c68f.up.railway.app&path=/ws#client"
-            AngConfigManager.importBatchConfig(config, "ParsaNG", false)
-            prefs.edit().putBoolean("first_run", true).apply()
+            val subUrl = "https://parsabanafshi1.github.io/ParsaNG-Sub/config.txt"
+            lifecycleScope.launch(Dispatchers.IO) {
+                try {
+                    AngConfigManager.importBatchConfig(subUrl, "ParsaNG", false)
+                    prefs.edit().putBoolean("first_run", true).apply()
+                } catch (e: Exception) {
+                    LogUtil.e(AppConfig.TAG, "Failed to import ParsaNG subscription", e)
+                }
+            }
         }
-        // ==== end ParsaNG default config ====
+        // ==== end ParsaNG Subscription ====
 
         mainViewModel.onAction(MainAction.Initialize)
 
