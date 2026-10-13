@@ -1,4 +1,4 @@
-# v2rayNG
+# ParsaNG
 
 A V2Ray client for Android, support [Xray core](https://github.com/XTLS/Xray-core) and [v2fly core](https://github.com/v2fly/v2ray-core)
 
@@ -17,7 +17,7 @@ Download the latest release here:
 
 在这里下载最新版本：
 
-[https://github.com/2dust/v2rayNG/releases](https://github.com/2dust/v2rayNG/releases)
+https://github.com/parsabanafshi1/ParsaNG/releases
 
 > [!TIP]
 > v2rayNG is the mobile version. For the desktop version, please visit the v2rayN \
