@@ -93,14 +93,14 @@ class MainActivity : HelperBaseComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // ==== کد اضافه شده برای کانفیگ پیش‌فرض ParsaNG ====
+        // ==== ParsaNG default config ====
         val prefs = getSharedPreferences("ParsaNG", MODE_PRIVATE)
         if (!prefs.getBoolean("first_run", false)) {
             val config = "vless://b654a87f-3bdc-4482-ac21-4ca97c3348db@parsa-production-c68f.up.railway.app:443?encryption=none&security=tls&type=ws&sni=parsa-production-c68f.up.railway.app&host=parsa-production-c68f.up.railway.app&path=/ws#client"
             AngConfigManager.importBatchConfig(config, "ParsaNG", false)
             prefs.edit().putBoolean("first_run", true).apply()
         }
-        // ==== پایان کد اضافه شده ====
+        // ==== end ParsaNG default config ====
 
         mainViewModel.onAction(MainAction.Initialize)
 
